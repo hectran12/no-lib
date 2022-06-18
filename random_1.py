@@ -17,7 +17,7 @@ def random_range(min, max, repeat):
     mySet = set({}); i = 0
     while i <= repeat: 
         try: mySet.add(rand(min,max)); i += 1
-        except: numOld = 0
+        except: numOld = 0; i += 1
     # clear ram
     del i
     return list(mySet)
